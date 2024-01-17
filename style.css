@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: #0d213a;
+}
+main {
+  margin: 2px;
+  height: 100vh;
+  height: 100svh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/landingImg5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+}
+
+#navBar {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background-color: #0d213a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nameLogo,
+#options,
+#login-getStarted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#nameLogo {
+  gap: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#options {
+  gap: 35px;
+}
+
+#getStarted {
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #216fee;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+
+#getStarted:hover {
+  background-color: #2065d4;
+}
+.pTag {
+  cursor: pointer;
+}
+
+.pTag:hover {
+  color: #ff004d;
+  font-weight: 700;
+}
+#heroSection {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+#HeroMsg {
+  width: 390px;
+}
+
+#Heading {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.item {
+  color: #216fee;
+}
+
+.Ptext {
+  color: #0d213a;
+}
