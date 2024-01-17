@@ -3,14 +3,14 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 html,
 body {
   overflow-x: hidden;
   position: relative;
-  background-color: #0d213a;
+  /* background-color: #0d213a; */
 }
 main {
   margin: 2px;
@@ -22,6 +22,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -999;
+  color: #ffffff;
 }
 
 #navBar {
@@ -33,6 +34,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 999;
 }
 #nameLogo,
 #options,
@@ -92,11 +94,193 @@ main {
   font-size: 13px;
   line-height: 2;
 }
-
+#SearchContainer {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.SearchElem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-right: 2px solid #5555;
+  border-radius: 5px;
+  padding: 5px;
+}
 .item {
   color: #216fee;
 }
 
-.Ptext {
+.ElemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ElemContainer > label {
+  font-size: 13px;
+  font-weight: 700;
   color: #0d213a;
+}
+
+.optioncontainer {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  color: #0d213a;
+}
+
+.optioncontainer > option {
+  color: #0d213a;
+  outline: none;
+}
+
+#Location > p {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0d213a;
+}
+
+#Location > input {
+  outline: none;
+  border: none;
+  color: #0d213a;
+  font-weight: 500;
+}
+
+#SearchBar {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 10px;
+  background-color: #216fee;
+  padding: 17px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#SearchBar:hover {
+  background-color: #2065d4;
+}
+
+#page2 {
+  margin: 20px 80px;
+  background-color: #ffffff;
+  color: #0d213a;
+}
+
+#exploreMoreDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 600px; */
+  padding: 20px 30px;
+}
+
+#P2Heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#p2Title {
+  color: #555555;
+  margin-top: 15px;
+  line-height: 1.8;
+  font-size: 14px;
+  width: 600px;
+  font-weight: 500;
+}
+
+#exploreMore {
+  background-color: #216fee;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#exploreMore > p > span {
+  margin-left: 10px;
+}
+#cardContainer{
+  margin-top: 20px;
+  gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-width: 300px;
+}
+.Image{
+  width: 300px;
+}
+
+.Image img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Image > i {
+  position: absolute;
+  border-radius: 5px;
+  color: #ff004d;
+  top: 7px;
+  right: 7px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #ffffff;
+}
+
+.price {
+  padding-top: 15px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cardHeading {
+  padding-top: 10px;
+  display: inline;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cardHeading:hover{
+  color: #216fee;
+}
+.cardTitle {
+  padding-top: 10px;
+  margin-left: 15px;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.facility {
+  padding: 15px;
+  /* margin-top: 20px; */
+  margin: 10px;
+  border-top: 1px solid #5555;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
