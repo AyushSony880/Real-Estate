@@ -219,11 +219,12 @@ main {
 }
 
 .card {
+  margin: 5px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  min-width: 300px;
+  min-width: 260px;
 }
 .Image {
   width: 300px;
@@ -282,6 +283,7 @@ main {
   border-top: 1px solid #5555;
   border-radius: 3px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -386,7 +388,7 @@ main {
 }
 
 #familyPhotoContainer {
-  padding: 20px 100px;
+  /* padding: 20px 100px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -419,7 +421,8 @@ main {
   font-size: 14px;
   font-weight: 500;
   left: 10px;
-  width: 300px;
+  width: 90%;
+ margin: 10px; 
 }
 .FamilyProfile {
   z-index: 11;
