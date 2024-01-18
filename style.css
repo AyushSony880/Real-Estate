@@ -5,7 +5,9 @@
   font-family: "Roboto", sans-serif;
   /* color: #ffffff; */
 }
-
+body::-webkit-scrollbar {
+  width: 0; 
+}
 html,
 body {
   overflow-x: hidden;
@@ -295,7 +297,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 60px;
+  /* gap: 60px; */
 }
 .marketingBox1 {
   display: flex;
@@ -308,6 +310,7 @@ main {
 }
 .marketingImg1 {
   min-width: 430px;
+  width: 500px;
   height: 345px;
   margin: 50px;
   border-radius: 15px;
@@ -350,4 +353,146 @@ main {
 .FacilityBox > span > i {
   color: #2065d4;
   margin-right: 5px;
+}
+#ourCustomerContainer {
+  padding: 0 100px;
+}
+#OurCustomerTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #216fee;
+}
+#OCbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#OCheading {
+  font-size: 32px;
+  margin-top: 15px;
+  font-weight: 700;
+  width: 470px;
+  line-height: 1.5;
+}
+
+#viewAll {
+  border: 2px solid #2065d4;
+  border-radius: 30px;
+  color: #2065d4;
+  cursor: pointer;
+  padding: 7px 15px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#viewAll:hover {
+  background-color: #2065d4;
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+}
+
+#familyPhotoContainer {
+  padding: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.familyPhotoCard {
+  position: relative;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 350px;
+  min-width: 260px;
+  background-size: cover;
+}
+.familyPhotoCard:hover {
+  transform: scale(1.002);
+}
+
+.NameContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 10px;
+  color: rgb(255, 217, 4);
+  font-size: 14px;
+  font-weight: 500;
+  left: 10px;
+  width: 300px;
+}
+.FamilyProfile {
+  z-index: 11;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+#footerContainer {
+  padding: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #0d213a;
+  width: 100%;
+  height: 250px;
+  color: #ffffff;
+}
+#footerContainerBox2{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#footerLogo > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footerElem {
+  width: 250px;
+}
+.footerPara{
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footerLink{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.Inst-Linkedin{
+  margin: 5px 10px;
+  text-decoration: none;
+}
+.Inst-Linkedin >i{
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#copyright{
+  border: 1px solid #555555;
+  padding: 5px 20px;
+  background-color: #0d213a;
+  color: #ffffff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  font-size: 12px;
 }
