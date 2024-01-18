@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  /* color: #ffffff; */
 }
 body::-webkit-scrollbar {
   width: 0; 
@@ -12,7 +11,6 @@ html,
 body {
   overflow-x: hidden;
   position: relative;
-  /* background-color: #0d213a; */
 }
 main {
   margin: 2px;
@@ -87,7 +85,7 @@ main {
 }
 
 #Heading {
-  font-size: 50px;
+  font-size: 4vw;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -179,9 +177,9 @@ main {
 
 #exploreMoreDiv {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  /* width: 600px; */
   padding: 20px 30px;
 }
 
@@ -195,7 +193,7 @@ main {
   margin-top: 15px;
   line-height: 1.8;
   font-size: 14px;
-  width: 600px;
+  max-width: 600px;
   font-weight: 500;
 }
 
@@ -280,7 +278,6 @@ main {
 
 .facility {
   padding: 15px;
-  /* margin-top: 20px; */
   margin: 10px;
   border-top: 1px solid #5555;
   border-radius: 3px;
@@ -290,20 +287,17 @@ main {
 }
 
 #marketingBoxContainer {
-  padding: 50px;
+  /* padding: 50px; */
   margin: 10px;
-  /* margin-top: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* gap: 60px; */
 }
 .marketingBox1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 150px; */
   width: 90%;
   margin: 10px;
   justify-content: center;
@@ -407,8 +401,8 @@ main {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  width: 350px;
   min-width: 260px;
+  width: 350px;
   background-size: cover;
 }
 .familyPhotoCard:hover {
@@ -438,18 +432,25 @@ main {
 #footerContainer {
   padding: 60px;
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: #0d213a;
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
+  gap: 20px;
   color: #ffffff;
+}
+#footerContainerBox1{
+  width: 270px;
 }
 #footerContainerBox2{
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 #footerLogo > div {
   display: flex;
@@ -460,9 +461,12 @@ main {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
+#footerTitle{
+  width: 270px;
+  margin-right: 20px;
+}
 .footerElem {
-  width: 250px;
+  width: 150px;
 }
 .footerPara{
   font-size: 14px;
