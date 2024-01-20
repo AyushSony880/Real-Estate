@@ -209,17 +209,18 @@ main {
 }
 
 #exploreMore {
-  background-color: #216fee;
+  border: 2px solid #2065d4;
   cursor: pointer;
+  color: #2065d4;
   padding: 10px 15px;
   border-radius: 30px;
-  color: #ffffff;
   font-size: 14px;
   font-weight: 500;
 }
-
-#exploreMore > p > span {
-  margin-left: 10px;
+#exploreMore:hover{
+  color: #ffffff;
+  background-color: #216fee;
+  transition: all ease-in-out 0.3s;
 }
 #cardContainer {
   margin-top: 20px;
@@ -236,6 +237,12 @@ main {
   overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   min-width: 260px;
+}
+.hideHeart{
+  visibility: hidden;
+}
+.ShowHeart{
+  visibility: visible;
 }
 .Image {
   width: 300px;
@@ -478,7 +485,7 @@ main {
   font-size: 20px;
 }
 #footerTitle {
-  width: 270px;
+  width: 260px;
   margin-right: 20px;
 }
 .footerElem {
@@ -593,7 +600,7 @@ main {
   }
   #Heading {
     font-size: 30px;
-    line-height: 1;
+    line-height: 1.2;
   }
   #title {
     line-height: 1;
@@ -617,9 +624,27 @@ main {
   .marketingImg1 {
     margin: 20px;
     min-width: 270px;
+    height: 280px;
   }
   .marketingTxt1 {
     min-width: 270px;
     max-width: 380px;
   }
+  #footerContainer {
+    padding: 40px 20px;
+    line-height: 1;
+}
+#ourCustomerContainer {
+  padding: 0;
+}
+#viewAll {
+  margin: 20px 0;
+}
+#OCbox {
+  flex-wrap: wrap;
+}
+#OCheading {
+  font-size: 24px;
+  line-height: 1;
+}
 }
